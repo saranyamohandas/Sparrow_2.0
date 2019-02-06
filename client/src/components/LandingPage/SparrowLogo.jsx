@@ -1,5 +1,5 @@
 import React from "react";
-import sparrowImg from "../../assets/img/sparrow2.png";
+import sparrowImg from "../../assets/img/sparrowGradWin.png";
 import "./style.css";
 
 function SparrowLogo(){
