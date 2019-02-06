@@ -1,6 +1,6 @@
 import React from "react";
 import SparrowLogo from "./SparrowLogo";
-import { Route,Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SparrowVideo from "./SparrowVideo";
 import BackVid from "./BackVid";
 import {Component} from "react";
@@ -20,10 +20,10 @@ return (
     <div>
      <div className="authContainer">
        <Link to="/login"> 
-        <button className="btn btn-warning btn-2" id="sign-in">Login</button>
+        <button className="btn btn-success btn-2" id="sign-in">Login</button>
        </Link>
         <Link to="/signup"> 
-        <a className="btn btn-warning btn-3" id="sign-up">Join Sparrow</a>
+        <a className="btn btn-success btn-3" id="sign-up">Join Sparrow</a>
         </Link>
 
       </div>
