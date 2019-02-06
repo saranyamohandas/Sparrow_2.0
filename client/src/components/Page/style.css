@@ -1,9 +1,17 @@
-.formCustom{
+.formSignup{
 	position: absolute;
-	top: 180%;
+	top: 190%;
 	left : 50px;
 	width: 95%;
 	
+}
+
+.formPosition{
+	position: absolute;
+	top: 10%;
+	left : 15%;
+	width: 75%;
+
 }
 
 

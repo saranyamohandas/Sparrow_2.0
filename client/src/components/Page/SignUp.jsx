@@ -1,18 +1,59 @@
 import React,{ Component } from "react";
+import API from "../../API/API"
 import "./style.css";
+import AdminLayout from "../../layouts/Admin/Admin.jsx";
+import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 class SignUp extends Component {
+  state = {
+    username : "",
+    email : "",
+    password : "",
+    firstname : "",
+    lastname : "",
+    userSignupSuccess : false
+  }
+  componentDidMount(props){
+  console.log(this.props);
+}
+  handleInputChange = (event) => {
+    event.preventDefault();
+    const name = event.target.name;
+    const value = event.target.value;
+    this.setState({[name]: value});
+    console.log(this.state.email);
+  }
 
+  handleSignup = (event) => {
+    event.preventDefault();
+    console.log("New user signed - ",this.state);
+    //console.log(this.state)
+    this.signupUser(this.state)
+
+  }
+
+  signupUser = (user) => {
+    API.signup(user).then(res => {
+      console.log("res");
+      this.setState({userSignupSuccess: true})
+
+    }).catch(err => console.log(err));
+    }
+  
 
 render() {
-return (
-<form  id="signup" name="signup" className="formCustom">
+
+if (this.state.userSignupSuccess) {
+      return <Redirect to='/dashboard' />
+    }
+    return (
+<form  id="signup" name="signup" className="formPosition">
     <div className="content">
       <div className="row">
         <div className="col-md-12">
           <div className="card custCard">
-            <div className="card-header">
-              <h5 className="title">Create Profile</h5>
+            <div className="card-header text-center">
+              <h3 className="title">Create Profile</h3>
             </div>
             <div className="card-body">
               
@@ -20,19 +61,19 @@ return (
                   <div className="col-md-4 pr-md-1">
                     <div className="form-group">
                       <label>Username</label>
-                      <input type="text" className="form-control" placeholder="Username" name="username"/>
+                      <input type="text" className="form-control" onChange={this.handleInputChange} placeholder="Username" name="username"/>
                     </div>
                   </div>
                   <div className="col-md-4 pl-md-1">
                     <div className="form-group">
                       <label>Email Address</label>
-                      <input type="email" className="form-control" placeholder="john.doe@gmail.com" name="email"/>
+                      <input type="email" className="form-control" onChange={this.handleInputChange} placeholder="john.doe@gmail.com" name="email"/>
                     </div>
                   </div>
                   <div className="col-md-4 pl-md-1">
                     <div className="form-group">
                       <label>Password</label>
-                      <input name="password" type="password" className="form-control" name="password" />
+                      <input name="password" type="password" className="form-control" onChange={this.handleInputChange} name="password" />
                     </div>
                   </div>
                 </div>
@@ -54,7 +95,7 @@ return (
                   <div className="col-md-12">
                     <div className="form-group">
                       <label>Address</label>
-                      <input type="text" className="form-control" placeholder="Home Address"/>
+                      <input type="text" className="form-control"  placeholder="Home Address"/>
                     </div>
                   </div>
                 </div>
@@ -89,7 +130,7 @@ return (
               </div>
             
             <div className="card-footer">
-              <button type="submit" className="btn btn-fill btn-success" id="addNewUser">Save</button>
+              <button type="submit" onClick={this.handleSignup} className="btn btn-fill btn-success" id="addNewUser">Save</button>
             </div>
           </div>
         </div>
@@ -97,7 +138,8 @@ return (
     </div>
   </form>
   )
-}
+  }
+
 
 };
 
