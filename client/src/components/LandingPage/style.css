@@ -1,11 +1,11 @@
 
 .imgContainer {
 
-	width:540px;
+	width:480px;
     height: auto;
 	position: absolute;
-	left: 650px;
-	top: 50px;
+	left: 600px;
+	top: -5%;
 
 
 }
@@ -21,7 +21,7 @@
 	/*width: 500px;*/
 	width: 60%;
 	position: absolute;
-	top : 32%;
+	top : 30%;
 	left :325px;
 	
 }
