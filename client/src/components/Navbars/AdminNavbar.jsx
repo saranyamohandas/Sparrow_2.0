@@ -1,6 +1,7 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
+import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 // reactstrap components
 import {
@@ -26,7 +27,8 @@ class AdminNavbar extends React.Component {
     this.state = {
       collapseOpen: false,
       modalSearch: false,
-      color: "navbar-transparent"
+      color: "navbar-transparent",
+      userLogOut : false
     };
   }
   componentDidMount() {
@@ -34,7 +36,12 @@ class AdminNavbar extends React.Component {
   }
   componentWillUnmount() {
     window.removeEventListener("resize", this.updateColor);
-  }
+  };
+
+  logOutUser = (event) => {
+     event.preventDefault();
+     this.setState({userLogOut: true})
+   }
   // function that adds color white/transparent to the navbar on resize (this is for the collapse)
   updateColor = () => {
     if (window.innerWidth < 993 && this.state.collapseOpen) {
@@ -69,6 +76,9 @@ class AdminNavbar extends React.Component {
     });
   };
   render() {
+    if (this.state.userLogOut) {
+      return <Redirect to='/' />
+    }
     return (
       <>
         <Navbar
@@ -175,7 +185,7 @@ class AdminNavbar extends React.Component {
                       <img alt="..." src={require("../../assets/img/anime3.png")} />
                     </div>
                     <b className="caret d-none d-lg-block d-xl-block" />
-                    <p className="d-lg-none">Log out</p>
+                    <p className="d-lg-none" >Log out</p>
                   </DropdownToggle>
                   <DropdownMenu className="dropdown-navbar" right tag="ul">
                     <NavLink tag="li">
@@ -186,7 +196,7 @@ class AdminNavbar extends React.Component {
                     </NavLink>
                     <DropdownItem divider tag="li" />
                     <NavLink tag="li">
-                      <DropdownItem className="nav-item">Log out</DropdownItem>
+                      <DropdownItem className="nav-item" onClick={this.logOutUser}>Log out</DropdownItem>
                     </NavLink>
                   </DropdownMenu>
                 </UncontrolledDropdown>

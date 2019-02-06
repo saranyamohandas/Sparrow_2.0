@@ -11,7 +11,7 @@ export default {
  },
  login: function(user) {
     console.log("inside login " + user);
-    //return("signup return")
+    //return("signin return")
     return axios.post("/auth/signin",user);
  }
 
