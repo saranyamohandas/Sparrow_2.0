@@ -1,8 +1,11 @@
+
 .imgContainer {
 
+	width:540px;
+    height: auto;
 	position: absolute;
-	left: 500px;
-	top: 100px;
+	left: 650px;
+	top: 50px;
 
 
 }
@@ -16,11 +19,21 @@
 
 .videoContainer{
 	/*width: 500px;*/
-	width: 95%;
+	width: 60%;
 	position: absolute;
-	top : 70%;
-	left :50px;
-	margin: 
+	top : 32%;
+	left :325px;
+	
+}
+
+.BackVid img {
+	position: absolute;
+	margin: 0 0 0 0;
+	z-index: -99;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+
 }
 /*.video-js.vjs-default-skin .vjs-big-play-button { display: none; }
 .video-react-control-bar {
