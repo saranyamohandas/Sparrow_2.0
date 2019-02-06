@@ -4,8 +4,6 @@ import { createBrowserHistory } from "history";
 
 import { Router, Route, Switch, Redirect } from "react-router-dom";
 import SignUp from "./components/Page/SignUp";
-
-
 import AdminLayout from "../src/layouts/Admin/Admin.jsx";
 import RTLLayout from "../src/layouts/RTL/RTL.jsx";
 import LandingPage from "./components/LandingPage/LandingPage";
