@@ -3,7 +3,7 @@ import SparrowLogo from "./SparrowLogo";
 import { Link } from "react-router-dom";
 import SparrowVideo from "./SparrowVideo";
 import BackVid from "./BackVid";
-import {Component} from "react";
+
 //import "node_modules/video-react/dist/video-react.css";
 //import sparrowVideo from "../../assets/img/Sparrow2_0.mp4";
 import "./style.css";
