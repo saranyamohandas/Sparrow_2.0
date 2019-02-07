@@ -30,7 +30,7 @@ class Footer extends React.Component {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Team Sparrow
+              Team Sparrow 2.0
             </a>{" "}
             for a more productive life.
           </div>
