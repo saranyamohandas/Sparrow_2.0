@@ -8,16 +8,28 @@
 
 .formPosition{
 	position: absolute;
-	top: 10%;
-	left : 15%;
-	width: 75%;
+	height: 100%;
+	width: 100%;
+	
 
 }
+
+#signup {
+	background-image: url("../../assets/img/giphy2.gif");
+	
+}
+
 .errMsg {
 	position: relative;
 	left: 35%;
 	color: red;
 	text-align: center;
 	margin-top: 10px;
+=======
+
+#Login {
+	background-image: url("../../assets/img/giphy2.gif");
+	
+
 }
 

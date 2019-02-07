@@ -1,8 +1,8 @@
 import React,{ Component } from "react";
 import API from "../../API/API"
 import "./style.css";
-import AdminLayout from "../../layouts/Admin/Admin.jsx";
-import { Router, Route, Switch, Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
+
 
 class SignUp extends Component {
   state = {
