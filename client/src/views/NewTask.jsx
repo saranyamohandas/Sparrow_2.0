@@ -36,7 +36,7 @@ class NewTask extends React.Component {
                                                     <label>Task Title</label>
                                                     <Input
                                                         defaultValue=""
-                                                        disabled
+                                                        enabled
                                                         placeholder="Laundry Pick - Dog Walking  - Item Pick Up"
                                                         type="text"
                                                     />
