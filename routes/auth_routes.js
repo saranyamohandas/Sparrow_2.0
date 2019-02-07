@@ -12,9 +12,11 @@ module.exports = function(passport,app) {
 
 app.post("/auth/signup",passport.authenticate('local-signup'),function(req,res){
 	const {firstname,lastname,id} = req.body;
-	console.log(firstname + lastname) ;
+	//console.log("*****" , req.user , "******") ;
 	//res.redirect("/user/profile");
-	res.send("user signup authenticated!");
+	console.log("from passport return",req.user.id);
+	//res.send("user signup authenticated!");
+	res.send({authId:req.user.id});
 	//res.json(res.js);
 });
 

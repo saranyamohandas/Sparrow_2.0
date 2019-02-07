@@ -13,5 +13,11 @@
 	width: 75%;
 
 }
-
+.errMsg {
+	position: relative;
+	left: 35%;
+	color: red;
+	text-align: center;
+	margin-top: 10px;
+}
 

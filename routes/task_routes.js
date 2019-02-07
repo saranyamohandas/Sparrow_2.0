@@ -5,7 +5,7 @@ var passport = require("../config/passport/passport.js");
 const taskController = require("../controller/taskController")
 
 router.use(function(req,res,next){
-	console.log(req.method,req.url);
+	console.log("*****",req.method,req.url,"*****");
 	next();
 });
 
@@ -14,6 +14,7 @@ router.get("/check",function(req,res){
 });
 
 router.post("/addTasks",taskController.create);
+router.get("/userTasks/:id",taskController.findById);
 
 
 function isLoggedIn(req, res, next) {

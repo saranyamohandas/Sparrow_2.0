@@ -34,6 +34,8 @@ class Admin extends React.Component {
         ps = new PerfectScrollbar(tables[i]);
       }
     }
+    console.log("mount",this.props.location);
+
   }
   componentWillUnmount() {
     if (navigator.platform.indexOf("Win") > -1) {
