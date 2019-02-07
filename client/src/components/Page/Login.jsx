@@ -9,7 +9,8 @@ class LogIn extends Component {
     username : "",
     email : "",
     password : "",
-    userLoginSuccess : false
+    userLoginSuccess : false,
+    userAuthMsg : ""
   }
   componentDidMount(props){
   console.log(this.props);
