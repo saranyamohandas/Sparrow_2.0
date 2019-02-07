@@ -8,10 +8,15 @@
 
 .formPosition{
 	position: absolute;
-	top: 10%;
-	left : 15%;
-	width: 75%;
+	height: 100%;
+	width: 100%;
+	
 
+}
+
+#signup {
+	background-image: url("../../assets/img/wall4.jpg");
+	
 }
 
 
