@@ -46,6 +46,12 @@ color: azure;
 color: azure;
 	
 }
+
+#Login{
+	color: black;
+	}
+	
+
 /*.video-js.vjs-default-skin .vjs-big-play-button { display: none; }
 .video-react-control-bar {
 	display: none
