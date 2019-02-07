@@ -97,9 +97,219 @@ class Dashboard extends React.Component {
                             </FormGroup>
                           </td>
                           <td>
-                            <p className="title">Update the Documentation</p>
+                            <p className="title">Tax Documents</p>
                             <p className="text-muted">
-                              Task Details
+                              Fill in forms for accountant. They are due on 02/08/2019
+                            </p>
+                          </td>
+                          <td className="td-actions text-right">
+                            <Button
+                              color="link"
+                              id="tooltip636901683"
+                              title=""
+                              type="button"
+                            >
+                              <i className="tim-icons icon-pencil" />
+                            </Button>
+                            <UncontrolledTooltip
+                              delay={0}
+                              target="tooltip636901683"
+                              placement="right"
+                            >
+                              Edit Task
+                            </UncontrolledTooltip>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                            </FormGroup>
+                          </td>
+                          <td>
+                            <p className="title">Pick Up Dry Cleaning</p>
+                            <p className="text-muted">
+                            Pick Up Dry Cleaning from 3290 California. 
+                            </p>
+                          </td>
+                          <td className="td-actions text-right">
+                            <Button
+                              color="link"
+                              id="tooltip636901683"
+                              title=""
+                              type="button"
+                            >
+                              <i className="tim-icons icon-pencil" />
+                            </Button>
+                            <UncontrolledTooltip
+                              delay={0}
+                              target="tooltip636901683"
+                              placement="right"
+                            >
+                              Edit Task
+                            </UncontrolledTooltip>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                            </FormGroup>
+                          </td>
+                          <td>
+                            <p className="title">DinnerReservations</p>
+                            <p className="text-muted">
+                              Call Spruce for reservations for Valentine's Day.
+                            </p>
+                          </td>
+                          <td className="td-actions text-right">
+                            <Button
+                              color="link"
+                              id="tooltip636901683"
+                              title=""
+                              type="button"
+                            >
+                              <i className="tim-icons icon-pencil" />
+                            </Button>
+                            <UncontrolledTooltip
+                              delay={0}
+                              target="tooltip636901683"
+                              placement="right"
+                            >
+                              Edit Task
+                            </UncontrolledTooltip>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                            </FormGroup>
+                          </td>
+                          <td>
+                            <p className="title">Find Landscaper</p>
+                            <p className="text-muted">
+                              Hire new landscaper for property in Mill Valley. Needed three times a month.
+                            </p>
+                          </td>
+                          <td className="td-actions text-right">
+                            <Button
+                              color="link"
+                              id="tooltip636901683"
+                              title=""
+                              type="button"
+                            >
+                              <i className="tim-icons icon-pencil" />
+                            </Button>
+                            <UncontrolledTooltip
+                              delay={0}
+                              target="tooltip636901683"
+                              placement="right"
+                            >
+                              Edit Task
+                            </UncontrolledTooltip>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                            </FormGroup>
+                          </td>
+                          <td>
+                            <p className="title">Pick up Birthday Gift</p>
+                            <p className="text-muted">
+                              Get gift for Lalia 4th birthday. The party is this Sunday.
+                            </p>
+                          </td>
+                          <td className="td-actions text-right">
+                            <Button
+                              color="link"
+                              id="tooltip636901683"
+                              title=""
+                              type="button"
+                            >
+                              <i className="tim-icons icon-pencil" />
+                            </Button>
+                            <UncontrolledTooltip
+                              delay={0}
+                              target="tooltip636901683"
+                              placement="right"
+                            >
+                              Edit Task
+                            </UncontrolledTooltip>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                            </FormGroup>
+                          </td>
+                          <td>
+                            <p className="title">Get Groceries</p>
+                            <p className="text-muted">
+                             Stop by Whole foods and pick up Pasta, Alfredo Sauce, Parmasan Cheese and chicken breasts.
+                            </p>
+                          </td>
+                          <td className="td-actions text-right">
+                            <Button
+                              color="link"
+                              id="tooltip636901683"
+                              title=""
+                              type="button"
+                            >
+                              <i className="tim-icons icon-pencil" />
+                            </Button>
+                            <UncontrolledTooltip
+                              delay={0}
+                              target="tooltip636901683"
+                              placement="right"
+                            >
+                              Edit Task
+                            </UncontrolledTooltip>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <FormGroup check>
+                              <Label check>
+                                <Input defaultValue="" type="checkbox" />
+                                <span className="form-check-sign">
+                                  <span className="check" />
+                                </span>
+                              </Label>
+                            </FormGroup>
+                          </td>
+                          <td>
+                            <p className="title">Apple Store</p>
+                            <p className="text-muted">
+                              Stop by Apple store and argue about anything and everything Apple.
                             </p>
                           </td>
                           <td className="td-actions text-right">
@@ -135,8 +345,20 @@ class Dashboard extends React.Component {
                 <CardBody>
                   <UncontrolledAlert color="success">
                     <span>
-                      <b>Primary - </b>
-                      This is a regular notification made with ".alert-primary"
+                      <b>Dog Walking - </b>
+                     Please pick up Waffles from 3949 Sacramento st for a 30 minute walk.
+                    </span>
+                  </UncontrolledAlert>
+                  <UncontrolledAlert color="warning">
+                    <span>
+                      <b>Garage Cleaning - </b>
+                     Looking to hire a person for 6 hours to help me tidy up my garage. Offering $25 and hour.
+                    </span>
+                  </UncontrolledAlert>
+                  <UncontrolledAlert color="primary">
+                    <span>
+                      <b>Dance Lessons - </b>
+                     I am looking for someone that is able to teach me how to Salsa. Can pay $15 and hour.
                     </span>
                   </UncontrolledAlert>
                 </CardBody>
