@@ -1,11 +1,11 @@
 
 .imgContainer {
 
-	width:540px;
+	width:480px;
     height: auto;
 	position: absolute;
-	left: 650px;
-	top: 50px;
+	left: 600px;
+	top: -8%;
 
 
 }
@@ -21,8 +21,10 @@
 	/*width: 500px;*/
 	width: 60%;
 	position: absolute;
-	top : 32%;
+	top : 30%;
 	left :325px;
+	margin: 0 auto;
+	border: 20px ridge #ddd;
 	
 }
 
@@ -34,6 +36,14 @@
 	height: 100%;
 	pointer-events: none;
 
+}
+
+#sign-in {
+color: azure;
+}
+#sign-up {
+color: azure;
+	
 }
 /*.video-js.vjs-default-skin .vjs-big-play-button { display: none; }
 .video-react-control-bar {

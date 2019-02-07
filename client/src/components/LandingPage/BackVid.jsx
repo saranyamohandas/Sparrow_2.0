@@ -8,7 +8,7 @@ function BackVid(){
 		
 
 			<div className="BackVid" id="background-video" loop muted controls>
-            <img src="https://media.giphy.com/media/3olMy4TPfwoanhUkez/giphy.gif" type="giphy">
+            <img src="https://media.giphy.com/media/xTiTntGxNP0RPEKmrK/giphy.gif" type="giphy">
             </img>
 	            
 	         </div> 
