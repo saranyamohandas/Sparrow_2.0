@@ -1432,7 +1432,7 @@ textarea.form-control {
   position: absolute;
   margin-top: 0.3rem;
   margin-left: -1.25rem; }
-  .form-check-input:disabled ~ .form-check-label {
+  .form-check-input:enabled ~ .form-check-label {
     color: #6c757d; }
 
 .form-check-label {
