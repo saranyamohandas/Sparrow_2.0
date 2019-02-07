@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Component} from "react";
 import SparrowLogo from "./SparrowLogo";
 import { Link } from "react-router-dom";
 import SparrowVideo from "./SparrowVideo";

@@ -31,6 +31,7 @@ class LogIn extends Component {
   }
 
   loginUser = (user) => {
+
     API.login(user).then(res => {
       console.log("res");
       this.setState({userLoginSuccess: true})
@@ -40,10 +41,12 @@ class LogIn extends Component {
 
 
 render() {
+
   if (this.state.userLoginSuccess) {
       return <Redirect to='/dashboard' />
     }
-return (
+    return (
+ 
 <form  id="Login" name="login" className="formPosition">
     <div className="content">
       <div className="row">
@@ -58,19 +61,19 @@ return (
                   <div className="col-md-4 pr-md-1">
                     <div className="form-group">
                       <label>Username</label>
-                      <input type="text" className="form-control" placeholder="Username" name="username"/>
+                      <input type="text" className="form-control" placeholder="Username" onChange={this.handleInputChange} name="username"/>
                     </div>
                   </div>
                   <div className="col-md-4 pl-md-1">
                     <div className="form-group">
                       <label>Email Address</label>
-                      <input type="email" className="form-control" placeholder="john.doe@gmail.com" name="email"/>
+                      <input type="email" className="form-control" placeholder="john.doe@gmail.com" onChange={this.handleInputChange} name="email"/>
                     </div>
                   </div>
                   <div className="col-md-4 pl-md-1">
                     <div className="form-group">
                       <label>Password</label>
-                      <input name="password" type="password" className="form-control" name="password" />
+                      <input name="password" type="password" className="form-control" name="password" onChange={this.handleInputChange}/>
                     </div>
                   </div>
                 </div>
@@ -86,6 +89,7 @@ return (
     </div>
   </form>
   )
+
 }
 
 };
