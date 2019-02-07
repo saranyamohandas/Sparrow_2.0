@@ -49,34 +49,10 @@ class Dashboard extends React.Component {
                   <CardTitle tag="h4">Global Claim Board</CardTitle>
                 </CardHeader>
                 <CardBody>
-                  <UncontrolledAlert color="primary">
+                  <UncontrolledAlert color="success">
                     <span>
                       <b>Primary - </b>
                       This is a regular notification made with ".alert-primary"
-                    </span>
-                  </UncontrolledAlert>
-                  <UncontrolledAlert color="info">
-                    <span>
-                      <b>Info - </b>
-                      This is a regular notification made with ".alert-info"
-                    </span>
-                  </UncontrolledAlert>
-                  <UncontrolledAlert color="success">
-                    <span>
-                      <b>Success - </b>
-                      This is a regular notification made with ".alert-success"
-                    </span>
-                  </UncontrolledAlert>
-                  <UncontrolledAlert color="warning">
-                    <span>
-                      <b>Warning - </b>
-                      This is a regular notification made with ".alert-warning"
-                    </span>
-                  </UncontrolledAlert>
-                  <UncontrolledAlert color="danger">
-                    <span>
-                      <b>Danger - </b>
-                      This is a regular notification made with ".alert-danger"
                     </span>
                   </UncontrolledAlert>
                 </CardBody>
