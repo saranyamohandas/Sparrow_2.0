@@ -1,7 +1,6 @@
 import React,{ Component } from "react";
 import "./style.css";
 import API from "../../API/API"
-
 import {Redirect } from "react-router-dom";
 
 class LogIn extends Component {
@@ -56,7 +55,7 @@ render() {
          <h3 className="errMsg">{this.state.userAuthMsg}</h3>
   </div>
  
-<form  id="Login" name="login" className="formPosition">
+<form  id="LogIn" name="login" className="formPosition">
     <div className="content">
     
       <div className="row">
