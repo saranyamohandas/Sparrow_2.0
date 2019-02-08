@@ -19,8 +19,17 @@
 	
 }
 
+.errMsg {
+	position: relative;
+	left: 35%;
+	color: red;
+	text-align: center;
+	margin-top: 10px;
+=======
+
 #Login {
 	background-image: url("../../assets/img/giphy2.gif");
 	
+
 }
 

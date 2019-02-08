@@ -11,7 +11,8 @@ class SignUp extends Component {
     password : "",
     firstname : "",
     lastname : "",
-    userSignupSuccess : false
+    userSignupSuccess : false,
+    userAuthId : ""
   }
   componentDidMount(props){
   console.log(this.props);
@@ -34,8 +35,16 @@ class SignUp extends Component {
 
   signupUser = (user) => {
     API.signup(user).then(res => {
-      console.log("res");
-      this.setState({userSignupSuccess: true})
+      console.log("res",res.data.authId);
+      this.setState({
+        userAuthId:res.data.authId,
+        userSignupSuccess: true
+      });
+      console.log(this.state.userAuthId)
+      // API.getTasks(res.data.authId).then(res=>{
+      //   console.log(res)
+      // })
+      //this.setState({userSignupSuccess: true})
 
     }).catch(err => console.log(err));
     }
@@ -44,8 +53,12 @@ class SignUp extends Component {
 render() {
 
 if (this.state.userSignupSuccess) {
-      return <Redirect to='/dashboard' />
-    }
+    
+       return <Redirect to={{pathname:'/dashboard',
+                             state: { id: '1' }
+                            
+                          }}/> 
+    } 
     return (
 <form  id="signup" name="signup" className="formPosition">
     <div className="content">

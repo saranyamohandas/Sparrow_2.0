@@ -54,9 +54,12 @@ module.exports = function (passport, auth,user) {
                             const {id,firstname,lastname} = newUser;
                             //const {}
                             User.create({firstName:firstname,lastName:lastname,AuthId: id})
-                            .then(user => console.log("New user " + user.firstName + " " + user.firstName + " added!"))
-                            .catch(err => console.log(err));
-                            
+                            .then(user => {
+                                const {id,firstName,lastName} = user;
+                                console.log(id);
+                                console.log("New user " + user.firstName + " " + user.firstName + " added!")
+                            }).catch(err => console.log(err));
+                            //return(newUser)
                             return done(null, newUser);
                         }
 

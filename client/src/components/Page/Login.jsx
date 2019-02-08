@@ -27,7 +27,7 @@ class LogIn extends Component {
     event.preventDefault();
     console.log("New user signed - ",this.state);
     //console.log(this.state)
-    this.loginUser(this.state)
+    this.loginUser(this.state);
 
   }
 
@@ -37,7 +37,11 @@ class LogIn extends Component {
       console.log("res");
       this.setState({userLoginSuccess: true})
 
-    }).catch(err => console.log(err));
+    }).catch(err => {
+      console.log(err);
+      this.setState({userAuthMsg : "Login not authorized!Invalid credentials!"});
+      console.log(this.state.userAuthMsg);
+    });
     }
 
 
@@ -47,9 +51,14 @@ render() {
       return <Redirect to='/dashboard' />
     }
     return (
+  <div>
+  <div className="row">
+         <h3 className="errMsg">{this.state.userAuthMsg}</h3>
+  </div>
  
 <form  id="Login" name="login" className="formPosition">
     <div className="content">
+    
       <div className="row">
         <div className="col-md-12">
           <div className="card custCard">
@@ -89,6 +98,7 @@ render() {
     </div>
     </div>
   </form>
+  </div>
   )
 
 }

@@ -27,7 +27,7 @@ ReactDOM.render(
       <Route exact path="/"  render={props => <LandingPage {...props}/>} />
       
 
-      <Redirect from="/" to="/admin/dashboard" /> 
+       <Redirect from="/" to="/admin/dashboard" /> 
     </Switch>
   </Router>,
   document.getElementById("root")

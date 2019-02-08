@@ -39,7 +39,7 @@ module.exports = function (sequelize, DataTypes) {
         // A Task can't be created without a User due to the foreign key constraint
         Task.belongsTo(models.User, {
             foreignKey: {
-                allowNull: false
+                allowNull: true
             }
         });
     };

@@ -13,6 +13,9 @@ export default {
     console.log("inside login " + user);
     //return("signin return")
     return axios.post("/auth/signin",user);
+ },
+ getTasks : function(authId){
+  return axios.get("/tasks/userTasks/"+authId);
  }
 
   // saveBook: function(bookData) {

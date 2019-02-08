@@ -1,6 +1,6 @@
 import React from "react";
 // nodejs library that concatenates classes
-
+import API from "../API/API"
 import Map from "../views/Map" ;
 
 
@@ -32,6 +32,7 @@ class Dashboard extends React.Component {
     super(props);
     this.state = {
       bigChartData: "data1"
+      // userId : this.props.location.state
     };
   }
   setBgChartData = name => {
@@ -39,6 +40,19 @@ class Dashboard extends React.Component {
       bigChartData: name
     });
   };
+  componentDidMount() {
+    // getUserTasks = (userId) => {
+      console.log("mount",this.props.location);
+    // API.getTasks(this.state.userId).then(res=>
+    // {
+    //     console.log("tasks",res)
+    //   })
+  }
+
+  //}
+  
+
+
   render() {
     return (
       <>
