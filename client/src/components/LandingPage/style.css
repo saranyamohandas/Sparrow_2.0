@@ -4,7 +4,7 @@
 	width:480px;
     height: auto;
 	position: absolute;
-	left: 600px;
+	left: 35%;
 	top: -8%;
 	margin-bottom: 5%; 
 
@@ -22,7 +22,7 @@
 	/*width: 500px;*/
 	width: 60%;
 	position: absolute;
-	top : 30%;
+	top : 33%;
 	left :325px;
 	margin: 0 auto;
 	border: 20px ridge #ddd;
