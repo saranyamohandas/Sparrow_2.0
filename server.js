@@ -38,9 +38,9 @@ require("./config/passport/passport.js")(passport, db.Auth,db.User);
 // Static directory
 //needs to be replaced with react index file
 //may need to change to router.use and require const router = require("express").Router();
-// app.use(function(req, res) {
-//     res.sendFile(path.join(__dirname, "../client/build/index.html"));
-//   });
+app.use(function(req, res) {
+    res.sendFile(path.join(__dirname, "client/build/index.html"));
+  });
 
 //app.use(express.static("client/build"));
 
