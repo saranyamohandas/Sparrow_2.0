@@ -42,6 +42,8 @@ require("./config/passport/passport.js")(passport, db.Auth,db.User);
 //     res.sendFile(path.join(__dirname, "../client/build/index.html"));
 //   });
 
+//app.use(express.static("client/build"));
+
 
 // Start the API server
 db.sequelize.sync({ force: false }).then(function () {
