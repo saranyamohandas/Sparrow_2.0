@@ -7,8 +7,8 @@ import SignUp from "./components/Page/SignUp";
 import AdminLayout from "../src/layouts/Admin/Admin.jsx";
 import RTLLayout from "../src/layouts/RTL/RTL.jsx";
 import LandingPage from "./components/LandingPage/LandingPage";
-import LogIn from "./components/Page/LogIn";
-
+import LogIn from "./components/Page/Login";
+// Import Login page update
 
 import "./assets/css/black-dashboard-react.css";
 import "./assets/demo/demo.css";
