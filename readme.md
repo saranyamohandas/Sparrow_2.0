@@ -41,13 +41,7 @@ Getting Started
 * Google Maps API
 * google-map-react 
 ```
-### Comments:
 
-
-```css
-Link to Project
-
-(Link Here)
 
 
 
